@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-// Restricts routes if not logged in
+// Restricts routes if not logged inn
 const ProtectedRoute = ({ children }) => {
   const { user } = useSelector((state) => state.auth);
   return user ? children : <Navigate to="/login" replace />;
